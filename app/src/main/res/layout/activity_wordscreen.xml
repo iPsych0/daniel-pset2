@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:text="Fill in the words to complete the story!"
+        android:id="@+id/textHeader"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/textHeader"
+        android:text=""
+        android:layout_margin="25dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/wordSort"
+        android:layout_gravity="center_horizontal" />
+
+    <android.inputmethodservice.ExtractEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textHeader"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/wordInput"
+        android:layout_marginTop="50dp"
+        android:hint="Type your word here"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/wordInput"
+        android:text=""
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/remainingWords"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_below="@+id/wordInput"
+        android:id="@+id/okButton"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40dp"
+        android:layout_gravity="center_horizontal" />
+</RelativeLayout>
